@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.AdminEditDiscount">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Offer: 10% off" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Text="Offer: 10% off" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="Offer: 10% off" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="1" Grid.Column="0" Text="Offer: 10% off" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+            </Grid>
+            <Button Text="Add New Discount Offer" Clicked="Button_Clicked_1" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

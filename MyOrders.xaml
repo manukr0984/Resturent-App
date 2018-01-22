@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.MyOrders"
+             Title="RECENT ORDERS">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" WidthRequest="300" HeightRequest="300"/>
+                <Label>
+            </Label>
+                    <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="2" Text="" HorizontalOptions="Center"  VerticalOptions="Center"></Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="1" Grid.Column="1" Text="Item 1, Item 2..&#x0a;Delivered to:&#x0a;123 Kent St.&#x0a;Albany NY, 12206&#x0a;09/14/2017 8:00 pm" HorizontalOptions="Center"  VerticalOptions="Center">
+                                                <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Grid.Row="1" Grid.Column="2" HorizontalOptions="Center"  VerticalOptions="Center" Text="Reorder&#x0a;$9.99" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="2" Grid.Column="1" Text="Item 1, Item 2..&#x0a;Delivered to:&#x0a;123 Kent St.&#x0a;Albany NY, 12206&#x0a;09/14/2017 8:00 pm" HorizontalOptions="Center"  VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_2" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Grid.Row="2" Grid.Column="2" Text="Reorder&#x0a;$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_3" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="3" Grid.Column="1" Text="Item 1, Item 2..&#x0a;Delivered to:&#x0a;123 Kent St.&#x0a;Albany NY, 12206&#x0a;09/15/2017 6:05 pm" HorizontalOptions="Center"  VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_4" />
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <Label Grid.Row="3" Grid.Column="2" Text="Reorder&#x0a;$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_5" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="4" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="4" Grid.Column="1" Text="Item 1, Item 2..&#x0a;Delivered to:   &#x0a;123 Kent St.&#x0a;Albany NY, 12206&#x0a;09/15/2017 6:05 pm" HorizontalOptions="Center"  VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_6" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Grid.Row="4" Grid.Column="2" Text="Reorder&#x0a;$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_7" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="5" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="5" Grid.Column="1" Text="Item 1, Item 2..&#x0a;Delivered to:   &#x0a;123 Kent St.&#x0a;Albany NY, 12206&#x0a;09/15/2017 6:05 pm" HorizontalOptions="Center"  VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_9" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Grid.Row="5" Grid.Column="2" Text="Reorder&#x0a;$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped_8" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.ListMenu">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Button Text="Home" Clicked="Button_Clicked"  TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="My Account" Clicked="Button_Clicked_3" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Menu" Clicked="Button_Clicked_1"  TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="My Orders" Clicked="Button_Clicked_2" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="My Cart" Clicked="Button_Clicked_11" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Payment Methods" Clicked="Button_Clicked_4" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Loyalty Points" Clicked="Button_Clicked_5" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Saved Addresses" Clicked="Button_Clicked_6" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Push Notifications" Clicked="Button_Clicked_7" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="App Feedback" Clicked="Button_Clicked_8" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Contact Us" Clicked="Button_Clicked_9" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Text="Sign Out" Clicked="Button_Clicked_10" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

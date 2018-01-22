@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.WelcomeAdmin">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label></Label>
+            <Label Text="Welcome Admin" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Please select from the options you would like to navigate." />
+            <Label></Label>
+            <Label
+            Text="Edit Menu"
+            TextColor="Blue"
+            HorizontalOptions="Center" >
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+            Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label TextColor="Blue" 
+                Text="Edit Payment Options" 
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center" />
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+             Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Label.GestureRecognizers>
+
+            <Label
+            Text="Edit Discount Offer"
+            TextColor="Blue"
+            HorizontalOptions="Center" >
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+            Tapped="TapGestureRecognizer_Tapped_2" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.MyRewards"
+             Title="LOYALTY POINTS">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" WidthRequest="100" HeightRequest="100"/>
+            <Label/>
+            <Label Text="My Rewards" HorizontalTextAlignment="Center"/>
+            <Label Text="Points: 140" HorizontalTextAlignment="Center"/>
+
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Offer: 10% off" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Text="Offer: 10% off" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="Offer: 10% off" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="1" Grid.Column="0" Text="Offer: 10% off" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

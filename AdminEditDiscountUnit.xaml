@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.AdminEditDiscountUnit">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label></Label>
+            <Label Text="Discount Offer Description" />
+            <Entry x:Name="Offer"
+               Placeholder="Offer Description"/>
+            <Label></Label>
+            <Button Clicked="Button_Clicked" Text="Edit Discount Offer" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold" HorizontalOptions="Center"></Button>
+            <Button Clicked="Button_Clicked_1" Text="Delete Discount Offer" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold" HorizontalOptions="Center"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

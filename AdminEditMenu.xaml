@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.AdminEditMenu">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label/>
+                <Picker Title="Select a Menu">
+                    <Picker.Items>
+                        <x:String>Breakfast</x:String>
+                        <x:String>Lunch</x:String>
+                        <x:String>Dinner</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label/>
+                <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+                <Grid.RowDefinitions  Padding="5">
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+               
+                <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                <Label Grid.Row="1" Grid.Column="1" Text="Menu Item 1" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                <Label x:Name="lbldisp" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="3"/>
+                <Label Grid.Row="1" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                <Label Grid.Row="2" Grid.ColumnSpan="5" Text="Details regarding the Menu Item 1 such as ingredients, calory content and country of origin."></Label>
+                <Button Text="Edit Menu Item" Grid.Row="3" Grid.ColumnSpan="2" Clicked="Button_Clicked"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+                <Button Text="Delete Menu Item" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Clicked="Button_Clicked_1"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+
+                    <Label Grid.Row="4" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="4" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                <Label Grid.Row="4" Grid.Column="1" Text="Menu Item 2" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                <Label x:Name="lbldisp2" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="4" Grid.Column="3"/>
+                <Label Grid.Row="5" Grid.ColumnSpan="5" Text="Details regarding the Menu Item 2 such as ingredients, calory content and country of origin."></Label>
+                <Button Text="Edit Menu Item" Grid.Row="6" Grid.ColumnSpan="2" Clicked="Button_Clicked"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+                <Button Text="Delete Menu Item" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" Clicked="Button_Clicked_1"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+
+                <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="7" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                <Label Grid.Row="7" Grid.Column="1" Text="Menu Item 3" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                <Label x:Name="lbldisp3" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="7" Grid.Column="3"/>
+                <Label Grid.Row="8" Grid.ColumnSpan="5" Text="Details regarding the Menu Item 3 such as ingredients, calory content and country of origin."></Label>
+                <Button Text="Edit Menu Item" Grid.Row="9" Grid.ColumnSpan="2" Clicked="Button_Clicked"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+                <Button Text="Delete Menu Item" Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="2" Clicked="Button_Clicked_1"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+                    <Label Grid.Row="7" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="10" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                <Label Grid.Row="10" Grid.Column="1" Text="Menu Item 4" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                <Label x:Name="lbldisp4" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="10" Grid.Column="3"/>
+                <Label Grid.Row="11" Grid.ColumnSpan="5" Text="Details regarding the Menu Item 4 such as ingredients, calory content and country of origin."></Label>
+                <Button Text="Edit Menu Item" Grid.Row="12" Grid.ColumnSpan="2" Clicked="Button_Clicked"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+                <Button Text="Delete Menu Item" Grid.Row="12" Grid.Column="3" Grid.ColumnSpan="2" Clicked="Button_Clicked_1"  BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold"></Button>
+                    <Label Grid.Row="10" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                
+                </Grid>
+                <Label></Label>
+                <Button Text="Add New Menu Item" Clicked="Button_Clicked_2"  TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

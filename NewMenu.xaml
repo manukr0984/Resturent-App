@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.NewMenu"
+             Title="LOGIN">
+    <ScrollView>
+    <StackLayout Padding="10">
+            <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" WidthRequest="300" HeightRequest="300"/>
+            <Entry x:Name="Email"
+               Placeholder="Email"/>
+        <Entry x:Name="Password"
+               Placeholder="Password" IsPassword="True"/>
+        <Button Text="Login"
+                Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"/>
+        <Label></Label>
+        <Label
+            Text="Forgot Password?"
+            TextColor="Blue"
+            HorizontalOptions="Center" >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+            Tapped="TapGestureRecognizer_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+            <Label TextColor="Blue" 
+                Text="Login as Admin" 
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center" />
+
+            <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+             Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Label.GestureRecognizers>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

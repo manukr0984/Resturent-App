@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.StarRating2">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label />
+            <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Rating " HorizontalOptions="Center"  VerticalOptions="Center"></Label>
+                <Image Source="http://www.clipartpanda.com/clipart_images/19-star-clip-art-1581207/download" Grid.Row="0" Grid.Column="2" HorizontalOptions="Start"  VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="http://www.clipartpanda.com/clipart_images/19-star-clip-art-1581207/download" Grid.Row="0" Grid.Column="3" HorizontalOptions="Center"  VerticalOptions="Center">
+
+                </Image>
+                <Image Source="http://www.clipartpanda.com/clipart_images/star-clipart-etc-5523818/download" Grid.Row="0" Grid.Column="4" HorizontalOptions="Center"  VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped3" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="http://www.clipartpanda.com/clipart_images/star-clipart-etc-5523818/download" Grid.Row="0" Grid.Column="5" HorizontalOptions="Center"  VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped4" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="http://www.clipartpanda.com/clipart_images/star-clipart-etc-5523818/download" Grid.Row="0" Grid.Column="6" HorizontalOptions="Center"  VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                     Tapped="TapGestureRecognizer_Tapped5" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </Grid>
+            <Editor HeightRequest="150"
+               Text="Feedback / Commments"/>
+            <Button Text="Send" Clicked="Button_Clicked" HorizontalOptions="Center"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

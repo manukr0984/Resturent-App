@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.OrderConfirmation"
+             Title="CONFIRMATION">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Image Source="https://www.iconexperience.com/_img/g_collection_png/standard/512x512/check.png"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" />
+
+            <Label Text="Your Order has been confirmed!" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+            <Label Text="Estimated delivery time is 25 mins" TextColor="Green" FontAttributes="Bold" VerticalOptions="Start" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

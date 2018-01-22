@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.SavedAddresses"
+             Title="SAVED ADDRESSES">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label />
+            <Grid Padding="5" HeightRequest="100" VerticalOptions="Start" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="30">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.Children>
+                    <Label Text="1st Floor, Kent St, Albany 12206"  Grid.Column="0" Font="Bold, 14" VerticalOptions="FillAndExpand" TextColor="#5D5D5D">
+                    </Label>
+                    <StackLayout Spacing="2" Grid.Column="2" VerticalOptions="Center">
+                        <Button Text="Edit" Clicked="Button_Clicked"  Grid.Row="0" Grid.Column="1" HorizontalOptions="End" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                        <Button Text="Delete" Clicked="Button_Clicked_2"  Grid.Row="1" Grid.Column="1" HorizontalOptions="End" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                    </StackLayout>
+                </Grid.Children>
+            </Grid>
+            <Grid Padding="5" HeightRequest="100" VerticalOptions="Start" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="30">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.Children>
+                    <Label Text="2nd Floor, Kent St, Albany 12206"  Grid.Column="0" Font="Bold, 14" VerticalOptions="FillAndExpand" TextColor="#5D5D5D">
+                    </Label>
+                    <StackLayout Spacing="2" Grid.Column="2" VerticalOptions="Center">
+                        <Button Text="Edit" Clicked="Button_Clicked"  Grid.Row="0" Grid.Column="1" HorizontalOptions="End" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                        <Button Text="Delete" Clicked="Button_Clicked_2"  Grid.Row="1" Grid.Column="1" HorizontalOptions="End" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                    </StackLayout>
+                </Grid.Children>
+            </Grid>
+            <Button Text="Add New Address" Clicked="Button_Clicked_1" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold">
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

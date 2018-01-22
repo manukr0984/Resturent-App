@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.MenuList"
+             Title="MENU">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label/>
+                <Picker Title="Select a Menu">
+                <Picker.Items>
+                    <x:String>Breakfast</x:String>
+                    <x:String>Lunch</x:String>
+                    <x:String>Dinner</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label/>
+            <Label/>
+
+                <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+                    <Grid.RowDefinitions  Padding="5">
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                        <RowDefinition Height="100"></RowDefinition>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="3" Text="Qty" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                <Label Grid.Row="0" Grid.Column="4" Text="Price" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                <Label Grid.Row="1" Grid.Column="1" Text="Menu Item 1" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                
+                    <Label x:Name="lbldisp" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="3"/>
+                    <Stepper  HorizontalOptions="Start"  VerticalOptions="Center" ValueChanged="stepper_ValueChanged" Grid.Row="1" Grid.Column="2"/>
+
+                    <Label Grid.Row="1" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="2" Grid.Column="1" Text="Menu Item 2" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Label x:Name="lbldisp1" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="3"/>
+                    <Stepper Grid.Row="2" Grid.Column="2" x:Name="stepper1" HorizontalOptions="Center"  VerticalOptions="Center" ValueChanged="stepper1_ValueChanged"></Stepper>
+                    <Label Grid.Row="2" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="3" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="3" Grid.Column="1" Text="Menu Item 3" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Label x:Name="lbldisp2" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="3" Grid.Column="3"/>
+                    <Stepper Grid.Row="3" Grid.Column="2" x:Name="stepper2" HorizontalOptions="Center"  VerticalOptions="Center" ValueChanged="stepper2_ValueChanged"></Stepper>
+                    <Label Grid.Row="3" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="4" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="4" Grid.Column="1" Text="Menu Item 4" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Label x:Name="lbldisp3" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="4" Grid.Column="3"/>
+                    <Stepper Grid.Row="4" Grid.Column="2" x:Name="stepper3" HorizontalOptions="Center"  VerticalOptions="Center" ValueChanged="stepper3_ValueChanged"></Stepper>
+                    <Label Grid.Row="4" Grid.Column="4" Text="$9.99" HorizontalOptions="Center"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+            </Grid>
+                <Button Text="Proceed to cart" Clicked="Button_Clicked_2" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

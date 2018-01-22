@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.LiveChat">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" WidthRequest="300" HeightRequest="300"/>
+                <Label Text="Name" FontAttributes="Bold"/>
+                <Entry x:Name="FullName"
+               Placeholder="Name"/>
+                <Label Text="Email" FontAttributes="Bold"/>
+                <Entry x:Name="EmailAddress"
+               Placeholder="Email"/>
+                <Label Text="Phone Number" FontAttributes="Bold"/>
+                <Entry x:Name="PhoneNumber"
+               Placeholder="Phone"/>
+                <Label Text="Message" FontAttributes="Bold"/>
+                <Grid>
+                    <BoxView Color="#D1F2EB"/>
+                    <Entry x:Name="Message"
+               Placeholder="Message" HeightRequest="100"/>
+                </Grid>
+                <Label>
+                </Label>
+                <!--   <Label x:Name="lbldisp11" VerticalOptions="Center" HorizontalOptions="Center"/> -->
+                <Button Text="Send" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

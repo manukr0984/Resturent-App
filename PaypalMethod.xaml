@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.PaypalMethod">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label />
+            <Label Text="Select Method of Payment"/>
+            <Picker Title="Paypal" SelectedIndexChanged="Picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Debit/Credit Card</x:String>
+                    <x:String>Paypal</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="You will be redirected to paypal to verify your account." HorizontalTextAlignment="Center"/>
+            <Button Text="Continue" Clicked="Button_Clicked"></Button>
+            <Button Text="Cancel" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

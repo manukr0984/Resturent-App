@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.AdminEditPayment">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label />
+            <Grid Padding="5" HeightRequest="50" VerticalOptions="Start" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.Children>
+                    <Label Text="Paypal"  Grid.Row="0" Grid.Column="0" Font="Bold, 14" VerticalOptions="FillAndExpand" TextColor="#5D5D5D">
+                    </Label>
+                    <Button Text="Delete" Clicked="Button_Clicked"  Grid.Row="0" Grid.Column="1" HorizontalOptions="End" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                    
+                </Grid.Children>
+            </Grid>
+
+            <Grid Padding="5" HeightRequest="50" VerticalOptions="Start" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+
+                    <ColumnDefinition Width="*">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.Children>
+                    <Label Text="Credit/Debit Card"  Grid.Row="0" Grid.Column="0" Font="Bold, 14" VerticalOptions="FillAndExpand" TextColor="#5D5D5D">
+                    </Label>
+                    <Button Text="Delete" Clicked="Button_Clicked"  Grid.Row="0" Grid.Column="1" HorizontalOptions="End" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+
+                </Grid.Children>
+            </Grid>
+
+            <Button Text="Add New Payment Method" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold">
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

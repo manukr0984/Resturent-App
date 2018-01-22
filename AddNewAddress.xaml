@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.AddNewAddress"
+             Title="ADD NEW ADDRESS">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Apt/Floor" />
+            <Entry x:Name="AptFloor"
+               Placeholder=""/>
+            <Label Text="Address" />
+            <Entry x:Name="Address"
+               Placeholder=""/>
+            <Label Text="City" />
+            <Entry x:Name="City"
+               Placeholder="Albany"/>
+            <Label Text="Zip Code" />
+            <Entry x:Name="ZipCode"/>
+            <Button Text="Save" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

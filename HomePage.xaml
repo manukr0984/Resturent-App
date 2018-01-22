@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.HomePage"
+             Title="WELCOME TO ONE STOP" >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label/>
+            <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" HeightRequest="300" WidthRequest="300" />
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Menu" Clicked="Button_Clicked_1" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Text="My Cart" Clicked="Button_Clicked_2" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="My Orders" Clicked="Button_Clicked_3" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+                <Button Grid.Row="1" Grid.Column="0" Text="My Account" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

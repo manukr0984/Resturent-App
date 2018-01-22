@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.EmailSent">
+    <ContentPage.Content>
+        <StackLayout Padding="10" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Your password has been sent to your email address. Use the link in the email to reset your password." 
+                   FontAttributes="Bold" TextColor="Green" HorizontalTextAlignment="Center"/>
+            <Label> 
+                </Label>
+            <Button Text="Login" BackgroundColor="#1abc9c" TextColor="WhiteSmoke" FontAttributes="Bold" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

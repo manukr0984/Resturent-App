@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.Profile"
+             Title="PROFILE">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,0">
+            <Label Text="Name" />
+            <Entry x:Name="Name"
+               Placeholder="John Doe"/>
+            <Label Text="Email" />
+            <Entry x:Name="Email"
+               Placeholder="johndoe@gmail.com"/>
+            <Label Text="Mobile" />
+            <Entry x:Name="Mobile"
+               Placeholder="5089999999"/>
+            <Label Text="Current Password" />
+            <Entry x:Name="Password" IsPassword="True"/>
+            <Button Text="Update Profile" Clicked="Button_Clicked_1" TextColor="White" BackgroundColor="#1abc9c" FontAttributes="Bold"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

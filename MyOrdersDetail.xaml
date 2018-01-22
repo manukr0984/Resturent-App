@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.MyOrdersDetail"
+             Title="RECENT ORDER DETAILS">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+            <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="https://cdn.pixabay.com/photo/2017/02/14/07/29/eat-2064948_960_720.jpg" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"  VerticalOptions="Center"></Image>
+                    <Label Grid.Row="0" Grid.Column="1" Text="My Order XYZ" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+            </Grid>
+                <Label></Label>
+                <Label></Label>
+                <Label></Label>
+                <Label Text="Delivered to 123 Kent St. Albany NY, 12206" FontAttributes="Bold"></Label>
+
+            <Grid VerticalOptions="Center"  HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="1." HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Text="2." HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Text="3." HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black"></Label>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Item 1" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Text="Item 2" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black"></Label>
+                    <Label Grid.Row="2" Grid.Column="1" Text="Item 3" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black"></Label>
+                    <Label Grid.Row="0" Grid.Column="2" Text="$9.99" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="1" Grid.Column="2" Text="$9.99" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="2" Grid.Column="2" Text="$9.99" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="4" Grid.Column="0" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="5" Grid.Column="0" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="6" Grid.Column="0" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="Black" FontAttributes="Bold"></Label>
+
+
+
+                    <Label Grid.Row="7" Grid.Column="0" Text="SubTotal:" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="8" Grid.Column="0" Text="Delivery Fee:" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="9" Grid.Column="0" Text="Tax:" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold"></Label>
+                    <Label Grid.Row="7" Grid.Column="3" Text="$29.97" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Label Grid.Row="8" Grid.Column="3" Text="$5.00" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Label Grid.Row="9" Grid.Column="3" Text="$2.40" HorizontalOptions="Start"  VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+
+                </Grid>
+            
+            <Label Text="Payment Method" FontAttributes="Bold"></Label>
+                <Label Text="VISA ****4606" FontAttributes="Italic" TextColor="Blue"></Label>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

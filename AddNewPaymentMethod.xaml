@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMenu.AddNewPaymentMethod">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="icon.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="*required" HorizontalTextAlignment="End"/>
+            <Label Text="Select Method of Payment"/>
+            <Picker Title="Debit/Credit Card" SelectedIndexChanged="Picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Debit/Credit Card</x:String>
+                    <x:String>Paypal</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label />
+            <Label Text="Card Number *" />
+            <Entry x:Name="CardNumber"/>
+            <Grid VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Expiration Month and Year *"></Label>
+                <DatePicker  Grid.Row="0" Grid.Column="1">
+                    <DatePicker.Format>yyyy-MM</DatePicker.Format>
+                </DatePicker>
+                <Label Grid.Row="1" Grid.Column="0" Text="CVC Code *"></Label>
+                <Label Grid.Row="1" Grid.Column="1" Text="Billing Zip Code *"></Label>
+                <Entry x:Name="CVCCode" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="BillingZipCode" Grid.Row="2" Grid.Column="1" />
+            </Grid>
+            <Button Text="Save" Clicked="Button_Clicked" HorizontalOptions="Center"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
